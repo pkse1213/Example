@@ -16,30 +16,35 @@
 ![](/images/Architecture/MVC.png)
 
 ## Model
-    앱의 비즈니스 로직과 데이터를 관장하는 영역
+ 앱의 비즈니스 로직과 데이터를 관장하는 영역
 
 ## View
-    유저에게 데이터를 보여주거나, UI를 담당하는 영역
+ 유저에게 데이터를 보여주거나, UI를 담당하는 영역
 
-   > View는 '어떻게' 보여질 지에 대해서만 관장하고, '어떤 것'을 보여줄 지에 대해서는 알지 못함
+> View는 '어떻게' 보여질 지에 대해서만 관장하고, '어떤 것'을 보여줄 지에 대해서는 알지 못함
 
 ## Controller
-    View와 Model을 이어주는 역할
+ View와 Model을 이어주는 역할
 
-    앱 전체의 로직과 인터페이스를 관장하는 영역
+ 앱 전체의 로직과 인터페이스를 관장하는 영역
 
-   > UI에서 일어나는 일을 판단하고 Model을 업데이트, Model에 변동이 생기면 UI에도 변화가 생김
+> UI에서 일어나는 일을 판단하고 Model을 업데이트, Model에 변동이 생기면 UI에도 변화가 생김
 
 ## MVC의 단점
-    * View Controller의 코드가 비대해짐
-    * View는 아무일도 하지 않음
-    * Model은 그저 단순한 Data 구조일 뿐
-    * View Controller는 View의 라이프 사이클과 강하게 역여 있어, 재사용이 불가능
-    * View와 Controller의 상호작용 (user action과 그에 따른 로직)은 unit test에서 테스트할 수 없음
+* View Controller의 코드가 비대해짐
+* View는 아무일도 하지 않음
+* Model은 그저 단순한 Data 구조일 뿐
+* View Controller는 View의 라이프 사이클과 강하게 역여 있어, 재사용이 불가능
+* View와 Controller의 상호작용 (user action과 그에 따른 로직)은 unit test에서 테스트할 수 없음
 
 # 9-2. MVVM (Model-View-ViewModel)
 
 >`MVVM`은 Model과, View, 그리고 View Model 로 구성된 소트트웨어 아키텍처 패턴
+
+## MVVM패턴의 특징
+* View와 ViewModel 간의 데이터바인딩
+- ViewModel이 Model을 통해 데이터를 받아와 변경사항을 View에 바로 적용
+-  사용자와의 interaction이 잦고 많은 소프트웨어에서 유용
 
 ![](/images/Architecture/MVVM.png)
 
@@ -55,9 +60,12 @@
 
 
 
-
-
-
+## MVVM패턴의 장점
+*뷰와 모델이 완전히 독립적
+* 코드의 재사용성
+* 간결해진 ViewController 코드
+* 유지보수 용이
+* 유닛 테스트 용이
 
 
 
