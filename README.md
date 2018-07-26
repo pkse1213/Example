@@ -13,6 +13,8 @@
 >
 >Model과 View, 그리고 Controller 세가지 요소로 구성 되어 있음
 
+![](/images/Architecture/MVC.png)
+
 ### Model
 > 앱의 비즈니스 로직과 데이터를 관장하는 영역
 
