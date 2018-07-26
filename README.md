@@ -37,7 +37,7 @@
 
 ## MVC의 단점
 * View Controller의 코드가 비대해짐
-* View Controller는 View의 라이프 사이클과 강하게 역여 있어, 재사용이 불가능
+* View Controller는 View의 라이프 사이클과 강하게 엮여 있어, 재사용이 불가능
 * View와 Controller의 상호작용 (user action과 그에 따른 로직)은 unit test에서 테스트할 수 없음
 
 ![](/images/Architecture/MVC2.png)
@@ -52,7 +52,7 @@
 - Method call이 아닌 Data-Binding을 통한 상호작용
 - View Model이 Model을 통해 데이터를 받아와 변경사항을 View에 바로 적용
 - View Model은 Presentation Logic을 다룸, 하지만 UI는 다루지 않음(UIKit import 금지)
-- 사용자와의 interaction이 잦고 많은 소프트웨어에서 유용
+- User Interaction이 잦고 많은 소프트웨어에서 유용
 
 ![](/images/Architecture/MVVM.png)
 
@@ -68,7 +68,17 @@ View Controller를 포함
 
 ## View Model
 View를 표현하기 위해 만들어진 View를 위한 Model
+> Model에서 변경을 호출하고 Model 자체를 갱신함 
+>
+> 따라서 View나 View Model 사이에서 바인딩을 함
+>
+> **Command패턴과 Data Binding**
 
+1. View에 입력이 들어오면 Command 패턴으로 ViewModel에 명령을 합니다.
+2. ViewModel은 필요한 데이터를 Model에 요청 합니다.
+3. Model은 ViewModel에 필요한 데이터를 응답 합니다.
+4. ViewModel은 응답 받은 데이터를 가공해서 저장 합니다.
+5. View는 ViewModel과의 Data Binding으로 인해 자동으로 갱신 됩니다.
 
 
 ## MVVM패턴의 장점
