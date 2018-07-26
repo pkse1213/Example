@@ -72,7 +72,7 @@ View를 표현하기 위해 만들어진 View를 위한 Model
 >
 > 따라서 View나 View Model 사이에서 바인딩을 함
 >
-> **Command패턴과 Data Binding**
+> **`Command패턴`**과 **`Data Binding`**
 >
 > 1. View에 입력이 들어오면 Command 패턴으로 ViewModel에 명령을 합니다.
 > 2. ViewModel은 필요한 데이터를 Model에 요청 합니다.
