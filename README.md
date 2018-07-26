@@ -42,7 +42,7 @@
 >`MVVM`은 Model과, View, 그리고 View Model 로 구성된 소트트웨어 아키텍처 패턴
 
 ## MVVM패턴의 특징
-* View와 ViewModel 간의 데이터바인딩
+**View와 ViewModel 간의 데이터바인딩**
 - ViewModel이 Model을 통해 데이터를 받아와 변경사항을 View에 바로 적용
 -  사용자와의 interaction이 잦고 많은 소프트웨어에서 유용
 
@@ -61,11 +61,11 @@
 
 
 ## MVVM패턴의 장점
-*뷰와 모델이 완전히 독립적
+* 뷰와 모델이 완전히 독립적
 * 코드의 재사용성
 * 간결해진 ViewController 코드
 * 유지보수 용이
-* 유닛 테스트 용이
+* Unit Test 용이
 
 
 
