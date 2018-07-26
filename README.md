@@ -47,9 +47,10 @@
 >`MVVM`은 Model과 View, 그리고 View Model 로 구성된 소트트웨어 아키텍처 패턴
 
 ## MVVM패턴의 특징
-**View와 ViewModel 간의 데이터바인딩**
-- ViewModel이 Model을 통해 데이터를 받아와 변경사항을 View에 바로 적용
--  사용자와의 interaction이 잦고 많은 소프트웨어에서 유용
+**View와 View Model 간의 데이터바인딩**
+- View Model이 Model을 통해 데이터를 받아와 변경사항을 View에 바로 적용
+- View Model은 Presentation Logic을 다룸, 하지만 UI는 다루지 않음(UIKit import 금지)
+- 사용자와의 interaction이 잦고 많은 소프트웨어에서 유용
 
 ![](/images/Architecture/MVVM.png)
 
