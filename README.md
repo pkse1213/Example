@@ -56,6 +56,22 @@
 
 ![](/images/Architecture/MVVM.png)
 
+## View Model
+View를 표현하기 위해 만들어진 View를 위한 Model
+> Model에서 변경을 호출하고 Model 자체를 갱신함 
+>
+> 따라서 View나 View Model 사이에서 바인딩을 함
+>
+> * **`Command`** 패턴과 **`data Binding`** 패턴
+>
+> 두가지 패턴으로 인해 View와 ViewModel은 의존성이 완전히 사라지게 됨
+>
+> 1. View에 입력이 들어오면 Command 패턴으로 ViewModel에 명령을 합니다.
+> 2. ViewModel은 필요한 데이터를 Model에 요청 합니다.
+> 3. Model은 ViewModel에 필요한 데이터를 응답 합니다.
+> 4. ViewModel은 응답 받은 데이터를 가공해서 저장 합니다.
+> 5. View는 ViewModel과의 Data Binding으로 인해 자동으로 갱신 됩니다.
+
 ## Model
 앱의 비즈니스 로직과 데이터를 관장하는 영역
 
@@ -65,21 +81,6 @@
 View Controller를 포함
 
 > View는 '어떻게' 보여질 지에 대해서만 관장하고, '어떤 것'을 보여줄 지에 대해서는 알지 못함
-
-## View Model
-View를 표현하기 위해 만들어진 View를 위한 Model
-> Model에서 변경을 호출하고 Model 자체를 갱신함 
->
-> 따라서 View나 View Model 사이에서 바인딩을 함
->
-> **`Command`** 패턴과 **`data Binding`** 패턴
->
-> 1. View에 입력이 들어오면 Command 패턴으로 ViewModel에 명령을 합니다.
-> 2. ViewModel은 필요한 데이터를 Model에 요청 합니다.
-> 3. Model은 ViewModel에 필요한 데이터를 응답 합니다.
-> 4. ViewModel은 응답 받은 데이터를 가공해서 저장 합니다.
-> 5. View는 ViewModel과의 Data Binding으로 인해 자동으로 갱신 됩니다.
-
 
 ## MVVM패턴의 장점
 * 뷰와 모델이 완전히 독립적
