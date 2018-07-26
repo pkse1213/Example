@@ -9,9 +9,12 @@
 
 # 9-1. MVC (Model-View-Controller)
 
->`MVC`는  프로그램을 짜는 대표적인 디자인 패턴 중 하나
->
->Model과 View, 그리고 Controller 세가지 요소로 구성 되어 있음
+>`MVC`는  가장 널리 사용된 디자인 패턴 중 하나
+
+## MVC패턴의 특징
+- Model과 View, 그리고 Controller 세가지 요소로 구성 되어 있음
+- Model과 View를 완전히 분리시켜 이들의 재사용성을 높임
+- 스파게티 코드 방지
 
 ![](/images/Architecture/MVC.png)
 
@@ -26,9 +29,11 @@
 ## Controller
  View와 Model을 이어주는 역할
 
- 앱 전체의 로직과 인터페이스를 관장하는 영역
-
-> UI에서 일어나는 일을 판단하고 Model을 업데이트, Model에 변동이 생기면 UI에도 변화가 생김
+> Model에 저장될 데이터와, View에서 보여질 데이터를 업데이트하고 컨트롤함
+>
+> Model 데이터가 변하면, Controller에게 Notify
+>
+> View에 유저 액션이 들어올 경우, Controller에게 Delegate
 
 ## MVC의 단점
 * View Controller의 코드가 비대해짐
@@ -39,7 +44,7 @@
 
 # 9-2. MVVM (Model-View-ViewModel)
 
->`MVVM`은 Model과, View, 그리고 View Model 로 구성된 소트트웨어 아키텍처 패턴
+>`MVVM`은 Model과 View, 그리고 View Model 로 구성된 소트트웨어 아키텍처 패턴
 
 ## MVVM패턴의 특징
 **View와 ViewModel 간의 데이터바인딩**
