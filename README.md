@@ -73,12 +73,12 @@ View를 표현하기 위해 만들어진 View를 위한 Model
 > 따라서 View나 View Model 사이에서 바인딩을 함
 >
 > **Command패턴과 Data Binding**
-
-1. View에 입력이 들어오면 Command 패턴으로 ViewModel에 명령을 합니다.
-2. ViewModel은 필요한 데이터를 Model에 요청 합니다.
-3. Model은 ViewModel에 필요한 데이터를 응답 합니다.
-4. ViewModel은 응답 받은 데이터를 가공해서 저장 합니다.
-5. View는 ViewModel과의 Data Binding으로 인해 자동으로 갱신 됩니다.
+>
+> 1. View에 입력이 들어오면 Command 패턴으로 ViewModel에 명령을 합니다.
+> 2. ViewModel은 필요한 데이터를 Model에 요청 합니다.
+> 3. Model은 ViewModel에 필요한 데이터를 응답 합니다.
+> 4. ViewModel은 응답 받은 데이터를 가공해서 저장 합니다.
+> 5. View는 ViewModel과의 Data Binding으로 인해 자동으로 갱신 됩니다.
 
 
 ## MVVM패턴의 장점
