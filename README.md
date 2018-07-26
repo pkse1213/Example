@@ -31,11 +31,11 @@
    > UI에서 일어나는 일을 판단하고 Model을 업데이트, Model에 변동이 생기면 UI에도 변화가 생김
 
 ## MVC의 단점
-* View Controller의 코드가 비대해짐
-* View는 아무일도 하지 않음
-* Model은 그저 단순한 Data 구조일 뿐
-* View Controller는 View의 라이프 사이클과 강하게 역여 있어, 재사용이 불가능
-* View와 Controller의 상호작용 (user action과 그에 따른 로직)은 unit test에서 테스트할 수 없음
+    * View Controller의 코드가 비대해짐
+    * View는 아무일도 하지 않음
+    * Model은 그저 단순한 Data 구조일 뿐
+    * View Controller는 View의 라이프 사이클과 강하게 역여 있어, 재사용이 불가능
+    * View와 Controller의 상호작용 (user action과 그에 따른 로직)은 unit test에서 테스트할 수 없음
 
 # 9-2. MVVM (Model-View-ViewModel)
 
